@@ -26,7 +26,6 @@ public class ManageFragment extends Fragment {
 
     public ManageFragment() {
         // Required empty public constructor
-        context = getActivity();
     }
 
     // Si necesito el Contexto me creo un constructor que tenga el contexto
@@ -36,6 +35,7 @@ public class ManageFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
+        context = getActivity();
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_manage, container, false);
         // TODO el codigo necesario para que el fragment funciones
